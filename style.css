@@ -1,8 +1,9 @@
 /* DETAILS ABOUT THIS STYLESHEET
     1. COMMON CSS
     2. HEADER CSS
-    3.FIRST-SECTION
+    3.FIRST-SECTION CSS
     4.SECOND-SECTION CSS
+    5.FOURTH-SECTION CSS
 ----------------------------------- */
 /* =====================
    1. Common css == 
@@ -82,6 +83,7 @@ nav{
 }
 .first-section-title{
     font-size: 64px;
+    line-height: 1.2em;
 }
 #fisrt-section-img{
     width: 556.01px;
@@ -113,4 +115,47 @@ nav{
 .player-info{
     color: #6C6C6C;
 
+}
+
+/* =========================
+    5.FOURTH-SECTION CSS == 
+============================ */
+.third-section-main{
+    margin-top: 50px;
+    padding: var(--padding-body);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.third-section-left{
+    padding: 50px;
+}
+.third-section-left h2{
+    font-size: 48px;
+    line-height: 1.2em;
+}
+.third-section-left p{
+    color: #6C6C6C;
+}
+
+.third-section-right img{
+    width: 567px;
+    height: 427px;
+}
+
+.footer-content {
+    text-align: center;
+}
+.footer-content img{
+    width: 483px;
+    height: 110px;
+}
+.footer-content i{
+    color: #6C6C6C;
+    font-size: 36px;
+    margin-right: 20px;
+}
+.footer-content p{
+    font-size: 20px;
 }
