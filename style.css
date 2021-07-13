@@ -1,0 +1,116 @@
+/* DETAILS ABOUT THIS STYLESHEET
+    1. COMMON CSS
+    2. HEADER CSS
+    3.FIRST-SECTION
+    4.SECOND-SECTION CSS
+----------------------------------- */
+/* =====================
+   1. Common css == 
+======================== */
+body{
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+    clear: both;
+}
+:root{
+    --padding-body:30px 20% 50px 20%;
+}
+.btn{
+    background: #E02C6D;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 18px;
+
+}
+.btn:hover{
+    transform: scale(1.2);
+    transition: 0.5s ease-in-out;
+}
+@keyframes btn-style {
+    0%{
+        transform: scale(1.2);
+    }
+    100%{
+        color: rgba(255, 255, 255, 0.37);
+    }
+}
+.btn:hover i{
+    animation-name: btn-style;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    
+}
+
+/* =====================
+   2.HEADER CSS == 
+======================== */
+#header-section{
+    background:  #2D25A0;
+    padding: 30px 20% 50px 18%;
+    color: white;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#mobile-menu-btn{
+    display: none;
+}
+#menu{
+    display: flex;
+}
+#menu li{
+    list-style: none;
+    font-size: 16px;
+    margin-right: 35px;
+}
+
+/* =========================
+   3.FIRST-SECTION CSS == 
+============================ */
+#first-section{
+    background: #2D25A0;
+    color: white;
+}
+.first-section-main{
+    padding:var(--padding-body);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.first-section-title{
+    font-size: 64px;
+}
+#fisrt-section-img{
+    width: 556.01px;
+    height: 438px;
+}
+/* =========================
+   4.SECOND-SECTION CSS == 
+============================ */
+#second-section{
+    display: flex;
+    justify-content: center;
+}
+.second-section-main{
+    margin-top: 50px;
+    padding:var(--padding-body);
+    display: grid;
+    grid-template-columns: repeat(3,0.2fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+}
+.players{
+    padding: 15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.players img{
+    width: 300px;
+    height: 256px;
+}
+.player-info{
+    color: #6C6C6C;
+
+}
