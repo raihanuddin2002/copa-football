@@ -386,6 +386,7 @@ footer{
         padding: 10px;
         flex-direction: column;
         align-items: center;
+        margin-bottom: 15px;
     }
     .second-section-main img{
         width: 100%;
@@ -399,10 +400,9 @@ footer{
          display: flex;
          flex-direction: column;
          align-items: center;
-         margin-bottom: 15px;
      }
      .third-section-main h2{
-         margin: 0px;
+        margin: 0px;
         font-size: 26px;
      }
      .third-section-main p{
