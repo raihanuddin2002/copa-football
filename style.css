@@ -84,6 +84,9 @@ nav{
 #mobile-menu-btn{
     display: none;
 }
+#check{
+    display: none;  
+}
 #menu{
     display: flex;
 }
@@ -338,27 +341,39 @@ footer{
    #header-section{
        padding: var(--padding-body);
    }
-    #menu{
-        display: block;
-    }
-    #menu li{
-        display: none;
-    }
     #mobile-menu-btn{
+        padding: 0px 20px;
         display: block;
         background: none;
         color: white;
-        border: none;
-        font-size: 26px;
+        /* border: 1px solid white; */
+        font-size: 30px;
+        cursor: pointer;
     }
-    #mobile-menu:hover #menu li{
+    #check{
+        display: none;
+    }
+    #menu{
+        padding-left: 0px;
+        display: none;
+        width: 90%;
+        text-align: center;
+        background-color: #141141;
+        transition: all .5s;
+    }
+    #menu li{
+        width: 100%;
+        padding: 10px 0px;
+        border: 1px solid white;
+    }
+    #menu li:hover{
+        background-color: #191557;
+    }
+    #check:checked ~ ul{
         display: block;
-        background-color: #494769;
-        padding: 5px;
         position: absolute;
-        top: 50px;
-        left: 30px;
-        z-index: 2;
+        margin: 10px auto;
+        transition: all .5s;
     }
     /* First section */
     .first-section-main{
@@ -469,28 +484,39 @@ footer{
     #header-section{
        padding: var(--padding-body);
     }
-    #menu{
-        display: block;
-    }
-    #menu li{
-        display: none;
-    }
-    #mobile-menu:hover #menu li{
-        display: block;
-        background-color: #494769;
-        padding: 5px;
-        position: absolute;
-        top: 50px;
-        left: 30px;
-        z-index: 2;
-    }
     #mobile-menu-btn{
+        padding: 0px 20px;
         display: block;
         background: none;
         color: white;
         /* border: 1px solid white; */
-        border: none;
-        font-size: 26px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    #check{
+        display: none;
+    }
+    #menu{
+        padding-left: 0px;
+        display: none;
+        width: 90%;
+        text-align: center;
+        background-color: #141141;
+        transition: all .5s;
+    }
+    #menu li{
+        width: 100%;
+        padding: 10px 0px;
+        border: 1px solid white;
+    }
+    #menu li:hover{
+        background-color: #191557;
+    }
+    #check:checked ~ ul{
+        display: block;
+        position: absolute;
+        margin: 10px auto;
+        transition: all .5s;
     }
     /* First section */
     .first-section-main{
@@ -591,28 +617,39 @@ footer{
    #header-section{
         padding: var(--padding-body);
     }
-    #menu{
-        display: block;
-    }
-    #menu li{
-        display: none;
-    }
-    #mobile-menu:hover #menu li{
-        display: block;
-        background-color: #494769;
-        padding: 5px;
-        position: absolute;
-        top: 50px;
-        left: 30px;
-        z-index: 2;
-    }
     #mobile-menu-btn{
+        padding: 0px 20px;
         display: block;
         background: none;
         color: white;
         /* border: 1px solid white; */
-        border: none;
-        font-size: 26px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    #check{
+        display: none;
+    }
+    #menu{
+        padding-left: 0px;
+        display: none;
+        width: 62%;
+        text-align: center;
+        background-color: #141141;
+        transition: all .5s;
+    }
+    #menu li{
+        width: 100%;
+        padding: 10px 0px;
+        border: 1px solid white;
+    }
+    #menu li:hover{
+        background-color: #191557;
+    }
+    #check:checked ~ ul{
+        display: block;
+        position: absolute;
+        margin: 10px auto;
+        transition: all .5s;
     }
     /* First section */
     .first-section-main{
