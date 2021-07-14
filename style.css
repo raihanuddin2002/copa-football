@@ -3,7 +3,7 @@
     2.HEADER CSS
     3.FIRST-SECTION CSS
     4.SECOND-SECTION CSS
-    5.FOURTH-SECTION CSS
+    5.THIRD-SECTION CSS
     6.TESTIMONIAL CSS
     7.CONTACT FORM CSS
     8.FOOTER CSS
@@ -41,12 +41,12 @@ body{
         color: rgba(255, 255, 255, 0.37);
     }
 }
-.btn:hover i{
+/* .btn:hover i{
     animation-name: btn-style;
     animation-duration: 1s;
     animation-iteration-count: infinite;
     
-}
+} */
 
 /* =====================
    2.HEADER CSS == 
@@ -56,6 +56,11 @@ body{
     padding: 30px 20% 50px 18%;
     color: white;
 }
+ #header-section:hover #i{
+    animation-name: btn-style;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+ }
 .marquee{
     display: none;
 }
@@ -64,7 +69,12 @@ body{
     background-color: rgba(0, 0, 0, 0.15);
     padding: 10px;
     text-align: center;
-    width: 700px;
+}
+#first-section:hover i{
+    animation-name: btn-style;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    
 }
 nav{
     display: flex;
@@ -133,8 +143,14 @@ nav{
 }
 
 /* =========================
-    5.FOURTH-SECTION CSS == 
+    5.THIRD-SECTION CSS == 
 ============================ */
+#third-section:hover i{
+    animation-name: btn-style;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    
+}
 .third-section-main{
     margin: 50px 0px;
     padding: var(--padding-body);
@@ -305,6 +321,8 @@ footer{
 /* =========================
    9.MEDIA QUERY  == 
 ============================ */
+
+/* Mobile devices */
 @media screen and (max-width: 740px) {
     /* Common css */
     :root{
@@ -321,6 +339,9 @@ footer{
        padding: var(--padding-body);
    }
     #menu{
+        display: block;
+    }
+    #menu li{
         display: none;
     }
     #mobile-menu-btn{
@@ -330,6 +351,15 @@ footer{
         /* border: 1px solid white; */
         border: none;
         font-size: 26px;
+    }
+    #mobile-menu:hover #menu li{
+        display: block;
+        background-color: #494769;
+        padding: 5px;
+        position: absolute;
+        top: 50px;
+        left: 30px;
+        z-index: 2;
     }
     /* First section */
     .first-section-main{
@@ -345,7 +375,6 @@ footer{
         height :260px
     }
     .marquee{
-        width: 300px;
         font-size: 12px;
     }
 
@@ -370,6 +399,7 @@ footer{
          display: flex;
          flex-direction: column;
          align-items: center;
+         margin-bottom: 15px;
      }
      .third-section-main h2{
          margin: 0px;
@@ -437,11 +467,23 @@ footer{
     
     }
     /* header */
-   #header-section{
+    #header-section{
        padding: var(--padding-body);
-   }
+    }
     #menu{
+        display: block;
+    }
+    #menu li{
         display: none;
+    }
+    #mobile-menu:hover #menu li{
+        display: block;
+        background-color: #494769;
+        padding: 5px;
+        position: absolute;
+        top: 50px;
+        left: 30px;
+        z-index: 2;
     }
     #mobile-menu-btn{
         display: block;
@@ -465,7 +507,6 @@ footer{
         height :260px
     }
     .marquee{
-        width: 500px;
         font-size: 12px;
     }
 
@@ -552,7 +593,19 @@ footer{
         padding: var(--padding-body);
     }
     #menu{
+        display: block;
+    }
+    #menu li{
         display: none;
+    }
+    #mobile-menu:hover #menu li{
+        display: block;
+        background-color: #494769;
+        padding: 5px;
+        position: absolute;
+        top: 50px;
+        left: 30px;
+        z-index: 2;
     }
     #mobile-menu-btn{
         display: block;
@@ -576,7 +629,6 @@ footer{
         height :260px
     }
     .marquee{
-        width: 700px;
         font-size: 16px;
     }
       /* second-section 
