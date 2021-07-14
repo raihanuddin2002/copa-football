@@ -425,10 +425,10 @@ footer{
      /* Contact form 
      ------------------------*/
      #contact-section{
-         padding: var(--padding-body);
+        padding: 50px 17%;
      }
      .contact-form{
-         padding: 15px 30px;
+        padding: 20px 15% 30px 15%;
      }
      
      .contact-title{
@@ -559,10 +559,10 @@ footer{
      /* Contact form 
      ------------------------*/
      #contact-section{
-         padding: var(--padding-body);
+         padding: 50px 20%;
      }
      .contact-form{
-         padding: 15px 30px;
+        padding: 20px 15% 30px 15%;
      }
      
      .contact-title{
