@@ -1,9 +1,13 @@
 /* DETAILS ABOUT THIS STYLESHEET
-    1. COMMON CSS
-    2. HEADER CSS
+    1.COMMON CSS
+    2.HEADER CSS
     3.FIRST-SECTION CSS
     4.SECOND-SECTION CSS
     5.FOURTH-SECTION CSS
+    6.TESTIMONIAL CSS
+    7.CONTACT FORM CSS
+    8.FOOTER CSS
+    9. MEDIA QUERY
 ----------------------------------- */
 /* =====================
    1. Common css == 
@@ -22,6 +26,7 @@ body{
     border: none;
     padding: 15px 40px;
     font-size: 18px;
+    cursor: pointer;
 
 }
 .btn:hover{
@@ -50,6 +55,15 @@ body{
     background:  #2D25A0;
     padding: 30px 20% 50px 18%;
     color: white;
+}
+.marquee{
+    display: none;
+}
+#first-section:hover .marquee{
+    display: block;
+    background-color: rgba(0, 0, 0, 0.15);
+    padding: 10px;
+    text-align: center;
 }
 nav{
     display: flex;
@@ -121,7 +135,7 @@ nav{
     5.FOURTH-SECTION CSS == 
 ============================ */
 .third-section-main{
-    margin-top: 50px;
+    margin: 50px 0px;
     padding: var(--padding-body);
     display: flex;
     justify-content: center;
@@ -143,7 +157,135 @@ nav{
     width: 567px;
     height: 427px;
 }
+/* =========================
+    6.TESTIMONIAL-SECTION CSS == 
+============================ */
+#testimonial-section{
+    background-color: #E02C6D;
+    color: white;
+}
+.testimonial-main{
+    width: 30%;
+    margin: 0 auto;
+    padding: 50px;
+    text-align: center;
+    background-color: #E02C6D;
+    color: white;
+    position: relative;
+}
+.tesmonial-article-2{
+    position: absolute;
+    top: 0px;
+    padding: 50px;
+    padding-left: 0px;
+    opacity: 0;
+}
+.testimonial-img-p img{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+.testimonial-main h2{
+    color: #191557;
+    margin: 0px;
+}
+.testimonial-main small{
+    color:rgb(0, 0, 0);
+}
+@keyframes testimonial {
+    0%{
+        opacity: 1;
+    }
 
+   100%{
+        opacity: 0;
+   }
+
+}
+.tesmonial-article-1{
+    animation-name: testimonial;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+}
+
+.tesmonial-article-2{
+    animation-name: testimonial;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+    animation-direction: reverse;
+}
+@keyframes i{
+    0%{
+        color: white;
+    }
+
+   100%{
+        color: #ce7696;
+   }
+
+}
+.i1{
+    animation-name: i;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+}
+.i2{
+    animation-name: i;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+    animation-direction: reverse;
+}
+/* =========================
+    7.CONTACT FORM CSS == 
+============================ */
+#contact-section{
+    padding: 100px 30% 100px 30%;
+    background-color: wheat;
+}
+.contact-form{
+    padding: 50px 12%;
+    background-color: #e02c6e5e;
+    font-size: 18px;
+}
+.contact-title{
+    text-align: center;
+    color: #E02C6D;
+    text-transform: uppercase;
+}
+.contact-form input{
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #bb20599a;
+    height: 30px;
+    border-radius: 3px;
+    font-size: 15px;
+}
+.contact-form input:focus{
+    background-color: #e02c6e3d;
+}
+
+.contact-form textarea{
+    width: 100%;
+    border: 1px solid #bb20599a;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    padding-left: 5px;
+}
+.contact-form textarea:focus{
+    background-color: #e02c6e3d;
+}
+/* =========================
+   8.FOOTER CSS == 
+============================ */
+footer{
+    padding: 50px;
+}
 .footer-content {
     text-align: center;
 }
@@ -158,4 +300,303 @@ nav{
 }
 .footer-content p{
     font-size: 20px;
+}
+/* =========================
+   9.MEDIA QUERY  == 
+============================ */
+@media screen and (max-width: 740px) {
+    /* Common css */
+    :root{
+        --padding-body:30px 5% 50px 5%;
+    }
+    .btn{
+ 
+        padding: 10px 30px;
+        font-size: 14px;
+    
+    }
+    /* header */
+   #header-section{
+       padding: var(--padding-body);
+   }
+    #menu{
+        display: none;
+    }
+    #mobile-menu-btn{
+        display: block;
+        background: none;
+        color: white;
+        /* border: 1px solid white; */
+        border: none;
+        font-size: 26px;
+    }
+    /* First section */
+    .first-section-main{
+        padding: var(--padding-body);
+        flex-direction: column;
+        text-align: center;
+    }
+    .first-section-title{
+        font-size: 36px;
+    }
+    #fisrt-section-img{
+        Width :330px;
+        height :260px
+    }
+    .marquee{
+        width: 300px;
+        font-size: 12px;
+    }
+
+    /* second-section 
+    ---------------------------*/
+    .second-section-main{
+        max-width: 100%;
+        display: flex;
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .second-section-main img{
+        width: 100%;
+        height: 400px;
+    }
+     /* third-section 
+     ------------------------------*/
+     .third-section-main{
+         max-width: 100%;
+         margin: 0px;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+     }
+     .third-section-main h2{
+         margin: 0px;
+        font-size: 26px;
+     }
+     .third-section-main p{
+         line-height: 1.5em;
+     }
+     .third-section-right img{
+         width: 100%;
+         height: 300px;
+     }
+      /* testimonial  section 
+     ------------------------------*/ 
+     .testimonial-main{
+         /* max-width: 100%; */
+         width: 100%;
+         padding: 20px 0px;
+     }
+     .testimonial-main article{
+         padding: 15px;
+     }
+     /* Contact form 
+     ------------------------*/
+     #contact-section{
+         padding: var(--padding-body);
+     }
+     .contact-form{
+         padding: 15px 30px;
+     }
+     
+     .contact-title{
+         font-size: 18px;
+     }
+     .contact-form input {
+        font-size: 12px;
+     }
+     .contact-form textarea{
+         font-size: 15px;
+     }
+      /* footer  section 
+     ------------------------------*/
+     .footer-content img{
+         width: 200px;
+         height: 100px;
+     }
+     .footer-content i{
+         font-size: 22px;
+     }
+     .footer-content p {
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (min-width: 741px) and (max-width: 991px) {
+    /* Common css */
+    :root{
+        --padding-body:30px 5% 50px 5%;
+    }
+    .btn{
+ 
+        padding: 15px 40px;
+        font-size: 18px;
+    
+    }
+    /* header */
+   #header-section{
+       padding: var(--padding-body);
+   }
+    #menu{
+        display: none;
+    }
+    #mobile-menu-btn{
+        display: block;
+        background: none;
+        color: white;
+        /* border: 1px solid white; */
+        border: none;
+        font-size: 26px;
+    }
+    /* First section */
+    .first-section-main{
+        padding: var(--padding-body);
+        flex-direction: column;
+        text-align: center;
+    }
+    .first-section-title{
+        font-size: 46px;
+    }
+    #fisrt-section-img{
+        Width :330px;
+        height :260px
+    }
+    .marquee{
+        width: 500px;
+        font-size: 12px;
+    }
+
+    /* second-section 
+    ---------------------------*/
+    .second-section-main{
+        max-width: 100%;
+        display: grid;
+        padding: 10px;
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+    }
+    .second-section-main img{
+        width: 100%;
+        height: 400px;
+    }
+     /* third-section 
+     ------------------------------*/
+     .third-section-main{
+         max-width: 100%;
+         margin: 0px;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+     }
+     .third-section-main h2{
+        margin: 0px;
+        font-size: 26px;
+     }
+     .third-section-left{
+         text-align: center;
+     }
+     .third-section-main p{
+         line-height: 1.5em;
+     }
+     .third-section-right img{
+         width: 100%;
+         height: 300px;
+     }
+      /* testimonial  section 
+     ------------------------------*/ 
+     .testimonial-main{
+         /* max-width: 100%; */
+         width: 100%;
+         padding: 20px 0px;
+     }
+     .testimonial-main article{
+         padding: 15px;
+     }
+     /* Contact form 
+     ------------------------*/
+     #contact-section{
+         padding: var(--padding-body);
+     }
+     .contact-form{
+         padding: 15px 30px;
+     }
+     
+     .contact-title{
+         font-size: 18px;
+     }
+     .contact-form input {
+        font-size: 12px;
+     }
+     .contact-form textarea{
+         font-size: 15px;
+     }
+      /* footer  section 
+     ------------------------------*/
+     .footer-content img{
+         width: 200px;
+         height: 100px;
+     }
+     .footer-content i{
+         font-size: 22px;
+     }
+     .footer-content p {
+        font-size: 16px;
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1370px){
+     /* header */
+   #header-section{
+        padding: var(--padding-body);
+    }
+    #menu{
+        display: none;
+    }
+    #mobile-menu-btn{
+        display: block;
+        background: none;
+        color: white;
+        /* border: 1px solid white; */
+        border: none;
+        font-size: 26px;
+    }
+    /* First section */
+    .first-section-main{
+        padding: var(--padding-body);
+        flex-direction: column;
+        text-align: center;
+    }
+    .first-section-title{
+        font-size: 46px;
+    }
+    #fisrt-section-img{
+        Width :330px;
+        height :260px
+    }
+    .marquee{
+        width: 700px;
+        font-size: 16px;
+    }
+      /* second-section 
+    ---------------------------*/
+    .second-section-main{
+        max-width: 100%;
+        display: grid;
+        padding: 10px;
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+    }
+    .second-section-main article{
+        height: 600px;
+    }
+    .second-section-main img{
+        width: 100%;
+        height: 400px;
+    }
+     /* Contact form 
+     ------------------------*/
+     #contact-section{
+         padding: 50px 15% 50px 15%;
+     }
 }
