@@ -348,7 +348,6 @@ footer{
         display: block;
         background: none;
         color: white;
-        /* border: 1px solid white; */
         border: none;
         font-size: 26px;
     }
@@ -425,10 +424,10 @@ footer{
      /* Contact form 
      ------------------------*/
      #contact-section{
-        padding: 50px 17%;
+        padding: 50px 5%;
      }
      .contact-form{
-        padding: 20px 15% 30px 15%;
+        padding: 15px 10% 20px 10%;
      }
      
      .contact-title{
